@@ -5,9 +5,13 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-size: 1.6rem;
+  line-height: 2;
 }
 
 /**  GLOBALEs   **/
+img{
+  max-width: 100%;
+}
 
 .contenedor {
   max-width: 120rem; /*= 1200 px */
@@ -26,6 +30,18 @@ h3 {
 h4 {
   font-size: 2.6rem;
 }
+/* Utilidades */
+.seccion{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.fw-300{
+  font-weight: 300;
+}
+.centrar-texto{
+  text-align: center;
+}
+
 
 /*HEADER*/
 .site-header.inicio {
@@ -72,4 +88,29 @@ h4 {
 .navegacion a:last-of-type {
   /*Seudo selectores No aplique al último campo*/
   margin: 0;
+}
+
+/** Iconos nosotros **/
+
+.iconos-nosotros{
+  display: flex;
+  justify-content: space-between;
+}
+.icono{
+  flex-basis: calc(33.3% - 1rem);
+  text-align: center;
+  
+}
+.icono h3{
+  text-transform: uppercase; /* Poner en mayúscula*/
+}
+
+/** ANUNCIOS **/
+
+.contenedor-anuncios{
+  display: flex;
+  justify-content: space-between;
+}
+.anuncio{
+  flex-basis: calc(33.3% - 1rem);
 }
