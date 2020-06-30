@@ -46,3 +46,20 @@ p {
     font-weight: bold;
     text-transform: uppercase;
 }
+@media (max-width: 80rem){
+    h1{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 50rem){
+    h1{
+        font-size: 2rem;
+    }
+    img{
+        width: 30rem;
+    }
+    .entrada-blog{
+        width: 90%;
+        margin: auto;
+    }
+}
