@@ -1,0 +1,93 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+
+p {
+  font-size: 16px;
+  line-height: 2;
+}
+
+.site-header {
+  padding: 20px 0;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+.claerfix::after {
+  content: "";
+  clear: both;
+  display: block;
+} /*Para limpiar los floats "Va en CONTENEDOR"*/
+
+/** Navegación **/
+.barra {
+  background-color: #db008d;
+}
+.navegacion-principal a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .navegacion-principal a {
+    display: inline-block; /*Aplica bien el padding*/
+  }
+}
+.navegacion-principal a:hover {
+  background-color: #00b8e4;
+}
+
+/** Contenedores Principales **/
+.contenido-principal,
+.sidebar {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .contenido-principal {
+    width: 70%;
+    float: left;
+    padding: 0 60px 0 0;
+  }
+  .sidebar {
+    width: 30%;
+    float: right;
+    padding: 0;
+  }
+}
+/** Entradas de Blog **/
+h2 {
+  color: #00b8e4;
+  margin-bottom: 20px;
+}
+.entrada {
+  margin-top: 30px;
+}
+.entrada img {
+  display: block;
+}
+@media (min-width: 480px) {
+  .entrada img {
+    width: 300px;
+    margin: 0 30px 0 0;
+    float: left;
+  }
+}
