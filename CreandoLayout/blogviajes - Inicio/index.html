@@ -6,6 +6,12 @@
     <title>Blog de Viajes</title>
     <link
       rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
     <link rel="stylesheet" href="css/estilos.css" />
@@ -14,13 +20,17 @@
     <header class="site-header contenedor">
       <img src="img/logo.png" alt="Logotipo" />
     </header>
+
     <div class="barra">
-      <nav class="navegacion-principal contenedor">
+      <a href="#nav" class="mobile-menu"><i class="fas fa-ellipsis-v"></i></a>
+      <nav id="nav" class="navegacion-principal contenedor">
         <a href="#">Inicio</a>
         <a href="#">Nosotros</a>
         <a href="#">Blog</a>
         <a href="#">Tienda</a>
         <a href="#">Contacto</a>
+
+        <a href="" class="cerrar"><i class="fas fa-times"></i></a>
       </nav>
     </div>
     <div class="contenedor">
@@ -94,5 +104,30 @@
         </section>
       </aside>
     </div>
+    <!-- Cierre del Contenedor -->
+    <footer class="footer-sitio">
+      <div class="contenedor clearfix">
+        <section class="nosotros">
+          <h2>Sobre Nosotros</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </section>
+        <section class="menu">
+          <h2>Menú de Navegación</h2>
+          <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Blog</a>
+            <a href="#">Tienda</a>
+            <a href="#">Contacto</a>
+          </nav>
+        </section>
+      </div>
+      <p class="copyright">
+        Blog de Viajes - Todos los Derechos Reservados 2020 &copy;
+      </p>
+    </footer>
   </body>
 </html>
