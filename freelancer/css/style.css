@@ -2,6 +2,7 @@
   --primario: #ffc107;
   --secundario: #0097a7;
   --oscuro: #221122;
+  --gris: #757575;
 
   --anchoPantalla: 120rem;
 }
@@ -131,11 +132,16 @@ p {
   font-weight: 700;
   font-size: 2.2rem;
   border-radius: 0.5rem;
+  border: none;
+}
+
+.boton:hover {
+  cursor: pointer;
 }
 
 .contenedor {
   max-width: var(--anchoPantalla);
-  margin: 0 auto;
+  margin: 3rem auto;
   background-color: white;
   padding: 3rem;
   border-radius: 1rem;
@@ -143,10 +149,6 @@ p {
   -webkit-box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 10px 21px -9px rgba(0, 0, 0, 0.75);
-}
-
-.servicios {
-  margin: 3rem auto;
 }
 
 .contenedor-servicios {
@@ -182,4 +184,66 @@ p {
 
 .iconos {
   font-size: 3rem;
+}
+
+form {
+  background-color: var(--gris);
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 3rem;
+}
+
+form legend {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--primario);
+  margin: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  form {
+    max-width: 80rem;
+    margin: 3rem auto;
+  }
+
+  .contenedor-campos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .campo {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+.campo {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.campo label {
+  flex: 0 0 9rem;
+  color: white;
+}
+
+.campo input {
+  flex: 1;
+  height: 4rem;
+}
+
+.campo textarea {
+  flex: 1;
+  height: 6rem;
+}
+
+.w-100 {
+  flex: 0 0 100%;
+}
+
+.enviar {
+  display: flex;
+  justify-content: center;
 }
