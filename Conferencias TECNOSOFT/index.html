@@ -1,41 +1,169 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+    <link rel="stylesheet" href="css/normalize.css" />
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
 
-  <meta name="theme-color" content="#fafafa">
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="css/main.css" />
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
+  <body>
+    <!-- Add your site or application content here -->
 
+    <header class="site-header">
+      <div class="hero">
+        <div class="contenido-header">
+          <nav class="redes-sociales">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </nav>
+
+          <div class="informacion-evento">
+            <div class="clearfix">
+              <p class="fecha">
+                <i class="far fa-calendar-alt"></i>17-28 Agosto
+              </p>
+              <p class="ciudad"><i class="fas fa-map-pin"></i>Puebla, MX</p>
+            </div>
+
+            <h1 class="nombre-sitio">TECNOSOFT</h1>
+
+            <p class="slogan">
+              Las mejores conferencias de <span>Diseño Web</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="barra">
+      <div class="contenedor clearfix">
+        <div class="logo">
+          <img src="img/logo.svg" alt="LOGO" />
+        </div>
+
+        <div class="menu-mobil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="navegacion-principal clearfix">
+          <a href="#">Conferencia</a>
+          <a href="#">Calendario</a>
+          <a href="#">Invitados</a>
+          <a href="#">Reservaciones</a>
+        </nav>
+      </div>
+      <!--Contenedor-->
+    </div>
+    <!--Barra-->
+
+    <section class="seccion contenedor">
+      <h2>La mejor conferencia de Diseño Web en Español</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos corporis
+        provident facere delectus quis deserunt, nihil quae quisquam possimus
+        officia temporibus, fuga aliquid nulla alias obcaecati a adipisci
+        praesentium ducimus?
+      </p>
+    </section>
+    <!--Sección-->
+
+    <section class="programa">
+      <div class="contenedor-video">
+        <video autoplay loop poster="img/bg-talleres.jpg">
+          <source src="video/video.mp4" type="video/mp4" />
+          <source src="video/video.webm" type="video/webm" />
+          <source src="video/video.ogv" type="video/ogg" />
+        </video>
+      </div>
+      <!--Contenedor-video-->
+
+      <div class="contenido-programa">
+        <div class="contenedor">
+          <div class="programa-evento">
+            <h2>Programa del evento</h2>
+
+            <nav class="menu-programa">
+              <a href="#talleres"><i class="fa fa-code"></i>Talleres</a>
+              <a href="#conferencias"
+                ><i class="fa fa-comment"></i>Conferencias</a
+              >
+              <a href="#seminarios"
+                ><i class="fa fa-university"></i>Seminarios</a
+              >
+            </nav>
+
+            <div class="info-curso ocultar clearfix" id="talleres">
+              <div class="detalle-evento">
+                <h3>HTML5, CSS3 y JavaScript</h3>
+                <p><i class="fa fa-clock"></i>10:00 a.m</p>
+                <p><i class="fa fa-calendar"></i>12 de Julio</p>
+                <p><i class="fa fa-user"></i>Abraham Flores Basilio</p>
+              </div>
+
+              <div class="detalle-evento">
+                <h3>Responsive Web Desing</h3>
+                <p><i class="fa fa-clock"></i>2:00 p.m</p>
+                <p><i class="fa fa-calendar"></i>12 de Julio</p>
+                <p><i class="fa fa-user"></i>Abraham Flores Basilio</p>
+              </div>
+              
+              <a href="" class="boton float-right">Ver Todos</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Programa-->
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
