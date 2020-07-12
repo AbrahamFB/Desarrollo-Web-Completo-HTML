@@ -348,6 +348,13 @@ h3 {
   margin-top: 20px;
   display: inline-block;
   transition: background-color 0.5s ease;
+  border: 2px solid;
+}
+
+.boton.hollow,
+.boton.hollow:hover {
+  background-color: white;
+  color: #fe4918;
 }
 
 .boton:hover {
@@ -755,4 +762,65 @@ p.numero {
   font-size: 4em;
   display: block;
   margin: 0 0 10px 0;
+  font-family: "Oswald", sans-serif;
+}
+
+/** Tabla de Precios **/
+
+ul.lista-precios > li {
+  /* Para que seleccione el primer li */
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  ul.lista-precios > li {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+div.tabla-precio {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 40px 0;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+
+div.tabla-precio:hover {
+  transform: scale(1.1);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666;
+}
+
+div.tabla-precio ul li {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #868686;
+  line-height: 26px;
+}
+
+div.tabla-precio ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  font-weight: 900;
+  vertical-align: top;
+  padding: 0 5px;
+  font-size: 20px;
+  color: green;
+  -webkit-font-smoothing: antialiased;
+  content: "\f00c";
+}
+
+div.tabla-precio h3 {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
+
+div.tabla-precio p.numero {
+  color: black;
+  margin-top: 20px 0;
 }
