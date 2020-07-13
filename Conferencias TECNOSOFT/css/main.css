@@ -357,6 +357,16 @@ h3 {
   color: #fe4918;
 }
 
+.boton.transparente {
+  background-color: transparent;
+  position: relative;
+  border: 2px solid white;
+}
+
+.boton.transparente:hover {
+  border: 2px solid#fe4918;
+}
+
 .boton:hover {
   background-color: #e33000;
 }
@@ -903,4 +913,36 @@ footer.info-testimonial cite span {
   display: block;
   text-transform: none;
   margin-top: 5px;
+}
+
+/** Newsletter **/
+
+div.newsletter {
+  position: relative;
+  height: auto;
+}
+
+div.newsletter::before {
+  background-image: url(../img/bg-newsletter.jpg);
+  content: "";
+}
+
+div.newsletter .contenido {
+  padding: 100px 0;
+  color: white;
+  text-align: center;
+}
+
+div.newsletter .contenido p {
+  position: relative;
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+div.newsletter .contenido h3 {
+  position: relative;
+  color: white;
+  text-transform: uppercase;
+  font-size: 7vw;
+  font-family: "PT Sans", sans-serif;
 }
