@@ -44,13 +44,14 @@ console.warn("Cuidado");
 // //Uso, recomendado para las etiquetas de HTML
 // const divMensaje = document.getElementById("mensaje");
 
-let nombre;
-nombre = "Abraham";
+// let nombre;
+// nombre = "Abraham";
 
-console.log(nombre);
+// console.log(nombre);
 
-let aprendiendo = "Aprendiendo",
-  tecnologia = "JavaScript";
+// let aprendiendo = "Aprendiendo",
+//   tecnologia = "JavaScript";
 
-console.log(`${aprendiendo} ${tecnologia}`);
-console.log(aprendiendo + " " + tecnologia); //Concatenar
+// console.log(`${aprendiendo} ${tecnologia}`);
+// console.log(aprendiendo + " " + tecnologia); //Concatenar
+
