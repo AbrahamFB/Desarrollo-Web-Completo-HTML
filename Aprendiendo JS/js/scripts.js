@@ -555,4 +555,275 @@
 //
 //console.log(logueado1 ? "Si se logueó" : "No se logueó");
 
+//// 177 CONDICIONALES - SWITCH
+//
+//// Switch statement
+//
+//const metodoPago = "efectivo";
+//
+//switch (metodoPago) {
+//  case "efectivo":
+//    console.log(`Pagaste con ${metodoPago}`);
+//    break;
+//  case "cheque":
+//    console.log(`Pagaste con ${metodoPago} revisaremos que tengas fondos`);
+//    break;
+//  case "tarjeta":
+//    console.log(`Pagaste con ${metodoPago} espere un momento..`);
+//    break;
+//  default:
+//    console.log("Aún no has pagado o método no válido");
+//    break;
+//}
 
+//// 178 LOOPS - FOR, WHILE Y DO WHILE
+//
+//// Foor loop -> evalua antes de ejecutar
+//for (let i = 0; i < 10; i++) {
+//  console.log(`Número ${i}`);
+//}
+//
+//const carrito = ["producto 1", "producto 2", "producto 3"];
+//
+//for (let j = 0; j < carrito.length; j++) {
+//  console.log(`Producto en el carrito ${carrito[j]}`);
+//}
+//
+//// While loop -> evalua antes de ejecutar
+//let i = 0;
+//while (i < 10) {
+//  console.log(`Número ${i}`);
+//  i++;
+//}
+//
+//let j = 0;
+//while (j < carrito.length) {
+//  console.log(`Producto en el carrito ${carrito[j]}`);
+//  j++;
+//}
+//
+//// Do while -> se ejecuta al menos una vez
+//
+//let q = 11;
+//do {
+//  console.log(`Número ${q}`);
+//  q++;
+//} while (i < 10);
+//
+
+//// 179 OTROS ITERADORES EN JAVASCRIPT
+//
+//// Un arreglo
+//const pendientes = ["Tarea", "Comer", "Proyecto", "Estudiar JavaScript"];
+//
+//// Un arreglo con objetos
+//
+//const carrito = [
+//  { id: 1, producto: "Libro" },
+//  { id: 2, producto: "Camisa" },
+//  { id: 3, producto: "Disco" },
+//];
+//
+//// Un objeto
+//
+//let automovil = {
+//  modelo: "Camaro",
+//  motor: 6.0,
+//  anio: 1967,
+//  marca: "Chevrolet",
+//};
+//
+//for (let i = 0; i < pendientes.length; i++) {
+//  console.log(pendientes[i]);
+//}
+//
+//for (pendiente of pendientes) {
+//  console.log(pendiente);
+//}
+//
+//for (producto of carrito) {
+//  console.log(producto.producto);
+//}
+//
+//for (info of Object.values(automovil)) {
+//  console.log(info);
+//}
+//
+//pendientes.forEach(function (tarea) {
+//  console.log(tarea);
+//});
+//
+//pendientes.forEach((tarea) => {
+//  console.log(tarea);
+//});
+//
+//pendientes.map((tarea) => {
+//  // crea una copia de un arreglo o de lo que esta iterando
+//  console.log(tarea);
+//});
+//
+//let nuevoArreglo = pendientes.forEach((tarea) => {});
+//let nuevoArreglo2 = pendientes.map((tarea) => tarea);
+//
+//console.log(nuevoArreglo);
+//console.log(nuevoArreglo2);
+//
+//Object.values(automovil).forEach((info) => {
+//  console.log(info);
+//});
+//
+//Object.keys(automovil).forEach((info) => {
+//  console.log(info);
+//});
+
+//// 180 Scope
+//// Scope es la visibilidad de una variable
+//let musica = "Pop";
+//
+//if (musica) {
+//  let musica = "Rock";
+//  console.log(`Dentro del if ${musica}`);
+//}
+//
+//console.log(`Fuera del if ${musica}`);
+
+//// 181 OBJECT DESTRUCTURING -> extraer datos de un objeto
+//
+//const cliente = {
+//  nombre: "Celeste",
+//  tipo: "Premium",
+//  datos: {
+//    ubicacion: { ciudad: "Puebla", pais: "México" },
+//    cuenta: {
+//      desde: "10-12-2017",
+//      saldo: 3000,
+//    },
+//  },
+//  gustos: {
+//    musica: ["Rock", "Pop"],
+//  },
+//};
+//console.log(cliente);
+//
+//// Forma antigua
+//const nombreCliente = cliente.nombre,
+//  tipoCliente = cliente.tipo,
+//  ubicacionCLiente = cliente.datos.ubicacion.ciudad;
+//
+//console.log(nombreCliente);
+//console.log(tipoCliente);
+//console.log(ubicacionCLiente);
+//
+//// Forma nueva
+//let { nombre, tipo } = cliente;
+//let {
+//  datos: {
+//    ubicacion: { ciudad },
+//  },
+//} = cliente;
+//console.log(nombre);
+//console.log(ciudad);
+//
+//let {
+//  datos: {
+//    cuenta: { saldo },
+//  },
+//} = cliente;
+//
+//console.log(saldo);
+//
+//let { gustos: musica } = cliente;
+//console.log(musica);
+
+//// 182 OBJECT LITERAL ENHACEMENT -> ponerlo dentro de un solo objeto
+//
+//const banda = "Pop",
+//  genero = "Inglés",
+//  canciones = ["Dance Monkey", "Perfect", "Sorry"];
+//
+//// forma anterior de hacerlo
+//
+//const pop = {
+//  banda: banda,
+//  genero: genero,
+//  canciones: canciones,
+//};
+//
+//console.log(pop);
+//
+//// forma nueva de hacerlo
+//const pop2 = {
+//  banda,
+//  genero,
+//  canciones,
+//};
+//
+//console.log(pop2);
+
+//// 188 FILTER .FIND Y .REDUCE EN JAVASCRIPT
+//
+//const personas = [
+//  { nombre: "Abraham", edad: 21 },
+//  { nombre: "Juan", edad: 29 },
+//  { nombre: "Gerardo", edad: 21 },
+//  { nombre: "Lizbeth", edad: 22 },
+//  { nombre: "Celeste", edad: 20, aprendiendo: "Diagramas de Flujo" },
+//];
+//
+//console.table(personas);
+//
+//// Obtener a las personas mayores de 25 años
+//
+//const mayores = personas.filter((persona) => persona.edad > 25);
+//
+//console.log(mayores);
+//
+//// Extraer información de Celeste
+//
+//const celeste = personas.find((persona) => persona.nombre === "Celeste");
+//
+//console.log(celeste);
+//
+//let { aprendiendo } = celeste;
+//console.log(aprendiendo);
+//
+//// Reduce -> nos va a traer un acumulado de los registros
+//
+//let total = personas.reduce((edadTotal, persona) => {
+//  return edadTotal + persona.edad;
+//}, 0); //Valor inicial
+//
+//console.log(total);
+//console.log(total / personas.length); //Promedio de edad
+
+// 184 Fetch API y mostrar resultados de otro sitio web con JavaScript -> Viene a remplazar a AJAX
+
+descargarUsuarios(30);
+
+function descargarUsuarios(cantidad) {
+  const api = `https://api.randomuser.me/?nat=US&results=${cantidad}`;
+
+  // llamado a Fech
+  fetch(api)
+    .then((respuesta) => respuesta.json())
+    .then((datos) => imprimirHTML(datos.results));
+}
+
+function imprimirHTML(datos) {
+  datos.forEach((usuario) => {
+    const li = document.createElement("li");
+    const {
+      name: { first },
+      name: { last },
+      picture: { medium },
+      nat,
+    } = usuario;
+    li.innerHTML = `
+      Nombre: ${first} ${last}
+      País: ${nat}
+      Imagen: <img src="${medium}">
+`;
+
+    document.querySelector("#app").appendChild(li);
+  });
+}
