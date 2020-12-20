@@ -180,9 +180,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -193,6 +193,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -209,11 +210,11 @@ textarea {
   }
 
   a[href]::after {
-    content: " (" attr(href) ")";
+    content: " ("attr(href) ")";
   }
 
   abbr[title]::after {
-    content: " (" attr(title) ")";
+    content: " ("attr(title) ")";
   }
 
   /*
@@ -481,6 +482,7 @@ div.logo {
   width: 80%;
   float: left;
 }
+
 div.logo img {
   width: 100%;
 }
@@ -530,6 +532,7 @@ nav.navegacion-principal a:last-of-type:hover {
     text-align: right;
     display: block;
   }
+
   nav.navegacion-principal a {
     padding: 10px 10px;
     display: inline-block;
@@ -589,6 +592,7 @@ div.contenido-programa {
   height: 100%;
   width: 100%;
 }
+
 div.programa-evento {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px;
@@ -695,6 +699,7 @@ div.invitado img {
   -webkit-filter: grayscale(1);
   -webkit-transition: all 0.5s ease;
 }
+
 div.invitado:hover img {
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.1);
@@ -777,13 +782,13 @@ p.numero {
 
 /** Tabla de Precios **/
 
-ul.lista-precios > li {
+ul.lista-precios>li {
   /* Para que seleccione el primer li */
   padding: 10px;
 }
 
 @media (min-width: 768px) {
-  ul.lista-precios > li {
+  ul.lista-precios>li {
     float: left;
     width: 33.3%;
   }
@@ -887,6 +892,7 @@ blockquote p::before {
 
 footer.info-testimonial {
   padding: 0;
+  background-color: transparent;
 }
 
 footer.info-testimonial img {
@@ -971,14 +977,14 @@ footer {
   margin-top: 20px;
 }
 
-footer .contenedor > div {
+footer .contenedor>div {
   color: white;
   padding: 20px 0;
   font-size: 12px;
 }
 
 @media (min-width: 768px) {
-  footer .contenedor > div {
+  footer .contenedor>div {
     width: 33.3%;
     float: left;
   }
@@ -1009,4 +1015,146 @@ footer nav.redes-sociales {
   padding: 10px 0;
   margin: 20px 0;
   text-align: center;
+}
+
+
+/** INTERNAS **/
+/*Registro*/
+
+form.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+
+form.registro label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+div.caja {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+
+div.campo {
+  padding: 20px;
+}
+
+@media(min-width:768px) {
+  div.campo {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+div.paquetes .tabla-precio:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+div.paquetes .tabla-precio input {
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.contenido-dia {
+  padding: 20px;
+  display: none;
+}
+
+@media(min-width:768px) {
+  .contenido-dia>div {
+    /*Para aplicar al primer hijo*/
+    float: left;
+    width: 33.3%;
+  }
+}
+
+
+.contenido-dia>div p {
+  text-align: left;
+}
+
+.contenido-dia>div label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido-dia>div input {
+  margin-right: 10px;
+}
+
+.contenido-dia>div label time {
+  color: #fe4918;
+  font-weight: bold;
+}
+
+/* Resumen registro */
+
+.resumen p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.resumen .extras {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+.resumen .extras .orden {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.resumen .extras .orden input {
+  margin: 10px 0 0 0;
+}
+
+.resumen .total {
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+
+.resumen input {
+  display: block;
+  margin: 10px auto;
+}
+
+#lista-productos {
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: none;
+}
+
+#suma-total {
+  text-align: center;
+  font-size: 2em;
+  color: #fe4918;
+}
+
+input[disabled].boton {
+  opacity: .5;
+}
+
+#error {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  display: none;
 }
