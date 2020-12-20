@@ -4,6 +4,20 @@
   var regalo = document.getElementById("regalo");
 
   document.addEventListener("DOMContentLoaded", function () {
+    var map = L.map("mapa").setView([19.005314, -98.20477], 16);
+
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      attribution:
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    }).addTo(map);
+
+    L.marker([19.005314, -98.20477])
+      .addTo(map)
+      .bindPopup("TECNOSOFT 2020 <br/> Disponible")
+      .openPopup()
+      .bindTooltip("un Tooltip")
+      .openTooltip();
+
     console.log("listo");
 
     // Campos Datos usuario
