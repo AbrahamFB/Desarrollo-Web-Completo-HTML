@@ -4,7 +4,26 @@ $(function () {
   "use strict";
   console.log("listo!");
 
-  /* Recorriendo arreglos*/
+  /*
+  /** Mostrar y ocultar **
+  $(".nuestros-servicios div:first").show();
+  $(".servicios nav a:first").addClass("activo");
+
+  $(".servicios nav a").on("click", mostrarTabs);
+
+  function mostrarTabs() {
+    $(".servicios nav a").removeClass("activo");
+    $(this).addClass("activo");
+    var enlace = $(this).attr("href");
+    //console.log(enlace);
+
+    $(".nuestros-servicios div").fadeOut();
+    $(enlace).fadeIn();
+    return false;
+  }*/
+
+  /*
+  /* Recorriendo arreglos
 
   var proximosViajes = ["Puebla", "México", "Querétaro"];
   //console.log(proximosViajes);
@@ -25,7 +44,7 @@ $(function () {
 
   $.each(viajesPorFechas, function (i, v) {
     $("aside").append("<li>" + i + " - " + v + "</li>");
-  });
+  });*/
 
   /* A J A X */
 
