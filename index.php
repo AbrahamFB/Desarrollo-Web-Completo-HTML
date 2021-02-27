@@ -47,7 +47,7 @@ echo "
 <html lang="es">
 
 <head>
-  <title>Enlistar, Cargar y Eliminar Ficheros en el Servidor</title>
+  <title>Mi portafolio sobre desarrollo web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
@@ -59,7 +59,7 @@ echo "
 <body>
   <header>
     <div class="alert alert-info">
-      <h2>Enlistar / Cargar / Eliminar Ficheros en el Servidor</h2>
+      <h2>Portafolio</h2>
     </div>
   </header>
 
