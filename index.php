@@ -69,32 +69,6 @@ echo $listar;
 ?>
   </div>
 
-  <form method="post" enctype="multipart/form-data" class="col-md-offset-4 col-md-4" style="margin-right:2%; border-radius:20px;">
-
-    <div class="bg-success" style="margin-top:2%; margin-bottom:20%; padding:3%; border-radius:20px;">
-      <input class="form-control" type="file" name="formato" id="formato" style="margin-bottom:2%;">
-      <input class="btn btn-default" type="submit" name="subir" value="Cargar archivo" style="width:100%;">
-    </div>
-  </form>
-
-  <form method="post" class="col-md-offset-4 col-md-4" style="margin-right:2%; margin-top:-7%; ">
-
-    <div class="bg-danger" style="margin-top:2%; margin-bottom:20%; padding:3%; border-radius:20px;">
-      <input class="form-control" name="borrarFor" size="50" placeholder=" Ejemplo: 1.Nombre_Del_Formato.xls" style="margin-bottom:2%;" />
-      <input class="btn btn-default" type="submit" name="borrar" value="Borrar formato" style="width:100%;">
-
-      <div class="col-md-6" style="margin-top:1%;">
-
-        <?php
-        echo $mensajeOk;
-        ?>
-
-      </div>
-      <br>
-      <br>
-    </div>
-
-  </form>
 </body>
 
 </html>
