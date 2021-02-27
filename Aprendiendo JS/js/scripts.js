@@ -257,6 +257,47 @@
 //      pais: "México"
 //  }
 //}
+
+//POO
+
+/**  Object Literal **/
+const producto = {
+  nombre: "Tablet",
+  precio: 1000,
+};
+
+/* Object Constructor */
+
+function Cliente(nombre, apellido) {
+  this.nombre = nombre;
+  this.apellido = apellido;
+}
+/// Prototypes Nos va a permitir crear funciones que solo se utilizan en un objeto en especifico
+Cliente.prototype.formatearCliente = function () {
+  return `Nombre: ${this.nombre} \n Apellido: ${this.apellido}`;
+};
+function Producto(nombre, precio) {
+  this.nombre = nombre;
+  this.precio = precio;
+}
+
+/// Prototypes Nos va a permitir crear funciones que solo se utilizan en un objeto en especifico
+Producto.prototype.formatearProducto = function () {
+  return `EL Producto ${this.nombre} tiene un precio de $ ${this.precio}`;
+};
+
+const producto2 = new Producto("Monitor", 1900);
+const producto3 = new Producto("Teléfono", 1200);
+
+const cliente = new Cliente("Abraham", "Flores");
+
+console.log(producto2);
+console.log(producto3);
+
+console.log(cliente.formatearCliente());
+console.log(producto2.formatearProducto());
+console.log(producto3.formatearProducto());
+
 //console.log(persona);
 //console.log(persona.edad); //Acceder a sus prioridades
 //console.log(persona.musica[1]); //Acceder a sus prioridades
