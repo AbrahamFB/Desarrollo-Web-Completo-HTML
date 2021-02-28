@@ -266,7 +266,8 @@ const producto = {
   precio: 1000,
 };
 
-/* Object Constructor */
+/*
+/* Object Constructor ---
 
 function Cliente(nombre, apellido) {
   this.nombre = nombre;
@@ -288,15 +289,27 @@ Producto.prototype.formatearProducto = function () {
 
 const producto2 = new Producto("Monitor", 1900);
 const producto3 = new Producto("Teléfono", 1200);
-
 const cliente = new Cliente("Abraham", "Flores");
 
 console.log(producto2);
-console.log(producto3);
-
 console.log(cliente.formatearCliente());
 console.log(producto2.formatearProducto());
 console.log(producto3.formatearProducto());
+
+*/
+
+//Clases
+class Producto {
+  constructor(nombre, precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+  }
+}
+
+const producto2 = new Producto("Monitor", 1900);
+const producto3 = new Producto("Teléfono", 1200);
+
+console.log(producto2);
 
 //console.log(persona);
 //console.log(persona.edad); //Acceder a sus prioridades
