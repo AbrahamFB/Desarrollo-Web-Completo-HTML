@@ -1,3 +1,4 @@
+"use strict"; // Correr JS en modo estricto
 //  Objetos
 
 const producto = {
@@ -6,6 +7,18 @@ const producto = {
   disponible: true,
 };
 
-producto.imagen = "imagen.jpg";
-
+//Evita que se agregue nuevas propiedades, cambiar un nuevo valor y tampoco eliminarlas
+Object.freeze(producto);
+producto.producto = "imagen.jpg";
+delete producto.precio;
 console.log(producto);
+
+
+// Este evita que se agreguen nuevas propiedades y eliminarlas
+Object.seal(producto);
+producto.producto = "SAMSUNG";
+delete producto.precio;
+console.log(producto);
+
+//Para saber si esta congelado o no
+console.log(Object.isFrozen(producto));
